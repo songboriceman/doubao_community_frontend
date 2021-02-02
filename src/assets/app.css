@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  background-color: #f6f6f6;
+  color: black;
+  width: 100%;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC,
+    Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei,
+    sans-serif, Apple Color Emoji, Segoe UI Emoji, Noto Color Emoji,
+    Segoe UI Symbol, Android Emoji, EmojiSymbols;
+}
+
+.el-card{
+  margin-bottom: 16px;
+}
