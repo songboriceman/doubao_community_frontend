@@ -15,6 +15,13 @@ const routes = [
     component: () => import('@/views/auth/Register'),
     meta: { title: '注册' }
   },
+  // 登录
+  {
+    name: 'login',
+    path: '/login',
+    component: () => import('@/views/auth/Login'),
+    meta: { title: '登录' }
+  },
   {
     path: '/404',
     name: '404',
