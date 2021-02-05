@@ -16,6 +16,135 @@ html {
     Segoe UI Symbol, Android Emoji, EmojiSymbols;
 }
 
-.el-card{
+/*背景图*/
+/*body {*/
+/*    background-image: url('https://api.mz-moe.cn/img.php');*/
+/*    background-repeat: round;*/
+/*}*/
+
+@media (min-width: 768px) {
+  .container {
+    width: 760px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 980px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1080px;
+  }
+}
+
+/*滚动条*/
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  /**/
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(239, 239, 239);
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #bfbfbf;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-corner {
+  background: #179a16;
+}
+
+.header {
+  position: fixed;
+  z-index: 89;
+  top: 0;
+  width: 100%;
+  min-width: 1032px;
+  background: #fff;
+  box-shadow: 0 1px 0px rgba(26, 26, 26, 0.1);
+  height: 53px;
+  font-size: 16px;
+}
+
+a {
+  color: #1d1d1d;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #f60;
+  text-decoration: none !important;
+}
+
+.shadow-1 {
+  box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1),
+    0 0 0 1px rgba(10, 10, 10, 0.02);
+}
+
+.navbar-dropdown {
+  font-size: 15px;
+}
+
+/*统一卡片样式*/
+.el-card {
+  /*border-radius: 3px !important;*/
   margin-bottom: 16px;
+  /*border: none;*/
+}
+
+.my-card {
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+
+.my-card:hover {
+  transform: scale(1.03);
+}
+
+::selection {
+  text-shadow: none;
+  background: rgba(67, 135, 244, 0.56);
+}
+
+/* 搜索框 */
+.search-bar input {
+  border: none;
+  box-shadow: none;
+}
+
+/*按钮居中*/
+.button-center {
+  display: block;
+  margin: 0 auto;
+}
+
+.ellipsis {
+  display: block;
+  display: -webkit-box;
+  margin: 0 auto;
+  line-height: 1.4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.is-ellipsis-1 {
+  -webkit-line-clamp: 1;
+}
+
+.is-ellipsis-2 {
+  -webkit-line-clamp: 2;
+}
+
+.is-ellipsis-3 {
+  -webkit-line-clamp: 3;
 }

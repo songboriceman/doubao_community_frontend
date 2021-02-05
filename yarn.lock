@@ -2879,6 +2879,11 @@ cyclist@^1.0.1:
   resolved "https://registry.npm.taobao.org/cyclist/download/cyclist-1.0.1.tgz#596e9698fd0c80e12038c2b82d6eb1b35b6224d9"
   integrity sha1-WW6WmP0MgOEgOMK4LW6xs1tiJNk=
 
+darkreader@^4.9.27:
+  version "4.9.27"
+  resolved "https://registry.npm.taobao.org/darkreader/download/darkreader-4.9.27.tgz#69b641d6a3c22b07fb0424406dfd9a3661b37197"
+  integrity sha1-abZB1qPCKwf7BCRAbf2aNmGzcZc=
+
 dashdash@^1.12.0:
   version "1.14.1"
   resolved "https://registry.npm.taobao.org/dashdash/download/dashdash-1.14.1.tgz#853cfa0f7cbe2fed5de20326b8dd581035f6e2f0"
