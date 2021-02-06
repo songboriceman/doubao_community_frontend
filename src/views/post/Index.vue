@@ -97,19 +97,36 @@
           </el-tab-pane>
         </el-tabs>
       </div>
+
+      <!--分页-->
+      <pagination
+        v-show="page.total > 0"
+        :total="page.total"
+        :page.sync="page.current"
+        :limit.sync="page.size"
+        @pagination="init"
+      />
     </el-card>
   </div>
 </template>
 
 <script>
 import { getList } from '@/api/post'
+import Pagination from '@/components/Pagination'
 
 export default {
   name: 'TopicList',
+  components: { Pagination },
   data() {
     return {
       activeName: 'latest',
-      articleList: []
+      articleList: [],
+      page: {
+        current: 1,
+        size: 10,
+        total: 0,
+        tab: 'latest'
+      }
     }
   },
   created() {
@@ -117,8 +134,11 @@ export default {
   },
   methods: {
     init(tab) {
-      getList(1, 10, tab).then((response) => {
+      getList(this.page.current, this.page.size, tab).then((response) => {
         const { data } = response
+        this.page.current = data.current
+        this.page.total = data.total
+        this.page.size = data.size
         this.articleList = data.records
       })
     },
