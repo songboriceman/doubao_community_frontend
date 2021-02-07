@@ -10,3 +10,11 @@ export function fetchCommentsByTopicId(topic_Id) {
   })
 }
 
+export function pushComment(data) {
+  return request({
+    url: '/comment/add_comment',
+    method: 'post',
+    data: data
+  })
+}
+

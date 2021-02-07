@@ -2,6 +2,7 @@
   <section class="box comments">
     <hr />
     <h3 class="title is-5">Comments</h3>
+    <lv-comments-form :slug="slug" v-if="token" @loadComments="fetchComments"/>
 
     <lv-comments-item
       v-for="comment in comments"
@@ -14,11 +15,13 @@
 <script>
 import { mapGetters } from 'vuex'
 import { fetchCommentsByTopicId } from '@/api/comment'
+import LvCommentsForm from './CommentsForm'
 import LvCommentsItem from './CommentsItem'
 
 export default {
   name: 'LvComments',
   components: {
+    LvCommentsForm,
     LvCommentsItem
   },
   data() {
