@@ -1,5 +1,7 @@
 # doubao_community_frontend
 
+### 技术讨论群
+待定
 
 ### 我们的口号
 编程困难怎么办？百度搜索豆约翰
