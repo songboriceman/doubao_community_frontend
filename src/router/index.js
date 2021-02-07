@@ -22,6 +22,13 @@ const routes = [
     component: () => import('@/views/auth/Login'),
     meta: { title: '登录' }
   },
+  // 发布
+  {
+    name: 'post-create',
+    path: '/post/create',
+    component: () => import('@/views/post/Create'),
+    meta: { title: '信息发布', requireAuth: true }
+  },
   {
     path: '/404',
     name: '404',
