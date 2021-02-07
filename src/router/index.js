@@ -35,7 +35,8 @@ const routes = [
     path: '/topic/edit/:id',
     component: () => import('@/views/post/Edit'),
     meta: {
-      title: '编辑'
+      title: '编辑',
+      requireAuth: true
     }
   },
   // 详情
@@ -43,6 +44,7 @@ const routes = [
     name: "post-detail",
     path: "/post/:id",
     component: () => import("@/views/post/Detail"),
+    meta: { title: "详情" },
   },
   {
     name: 'tag',
@@ -69,7 +71,7 @@ const routes = [
     name: 'user-setting',
     path: '/member/:username/setting',
     component: () => import('@/views/user/Setting'),
-    meta: { title: '设置' }
+    meta: { title: '设置', requireAuth: true }
   },
   {
     path: "/404",
