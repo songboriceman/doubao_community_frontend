@@ -143,6 +143,7 @@ export default {
       })
     },
     handleClick(tab) {
+      this.page.current = 1
       this.init(tab.name)
     }
   }
