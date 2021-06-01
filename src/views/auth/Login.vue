@@ -49,7 +49,7 @@ export default {
   name: "Login",
   data() {
     return {
-      redirect: undefined,
+      redirect: this.$route.query.redirectFrom,
       loading: false,
       ruleForm: {
         name: "",
